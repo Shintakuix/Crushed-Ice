@@ -1,16 +1,22 @@
-$("#block1").hover(function(){
+$(".container").hover(function(){
+    $("#response1").hide();
+    $("#response2").hide();
+    $("#response3").hide();
+})
+
+$(".item-1").hover(function(){
     $("#response1").show();
     $("#response2").hide();
     $("#response3").hide();
 })
 
-$("#block2").hover(function(){
+$(".item-2").hover(function(){
     $("#response2").show();
     $("#response1").hide();
     $("#response3").hide();
 })
 
-$("#block3").hover(function(){
+$(".item-3").hover(function(){
     $("#response3").show();
     $("#response1").hide();
     $("#response2").hide();
