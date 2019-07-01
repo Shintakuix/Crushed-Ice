@@ -1,4 +1,4 @@
-$(".block2").on("click", function(event) {
+$("#block2").on("click", function(event) {
   console.log("facts!!!")
   event.preventDefault();
   $("#response2").empty();

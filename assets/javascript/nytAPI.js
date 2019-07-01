@@ -1,4 +1,4 @@
-$(".block3").on("click", function(event) {
+$("#block3").on("click", function(event) {
     console.log("works!!!");
     event.preventDefault();
     /* console.log("works"); */
