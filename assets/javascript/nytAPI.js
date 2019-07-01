@@ -3,8 +3,7 @@ $("#block3").on("click", function(event) {
   event.preventDefault();
   /* console.log("works"); */
   $("#response3").empty();
-  /* &begin_date=20120101&end_date=20121231 */
-
+  
   var currentTime = moment();
   var todayFormat = moment(currentTime).format("YYYYMMDD")
   console.log(todayFormat);
@@ -26,17 +25,18 @@ $("#block3").on("click", function(event) {
     var randomArticle = response.response.docs[Math.floor(Math.random() * 10)];
     console.log(randomArticle);
   
-    var h1 = $("<p>").text("HeadLine: " + randomArticle.headline.main);
-    var abstract = $("<p>").text("Abstract: " + randomArticle.lead_paragraph);
-    var webURL = $("<p>").text("Full Article: " + randomArticle.web_url);
-   /*  console.log(h1);
-    console.log(p); */
-    
+    var h1 = $("<p>").text(randomArticle.headline.main);
+    var headBold = $("<b>").text("Headline: ");
+    var abstract = $("<p>").text(randomArticle.lead_paragraph);
+    var abstractBold = $("<b>").text("Abstract: ");
+    var webURL = $("<a>").text(randomArticle.web_url);
+    webURL.attr("href" , randomArticle.web_url);
+
+    $(h1).prepend(headBold);
+    $(abstract).prepend(abstractBold);
     $("#response3").append(h1);
     $("#response3").append(abstract);
     $("#response3").append(webURL);
-
-
   });
 })
 
