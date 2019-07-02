@@ -212,3 +212,40 @@ h1 {
         flex: 9;
     }
 }
+
+@media (max-width: 575.98px) {
+
+    .container {
+        padding: 35px 0;
+        margin: 0 auto;
+        width: 570px;
+    }
+
+    .gallery-wrap {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: 70vh;
+    }
+
+    .item {
+        flex: 1;
+        height: 100%;
+        background-position: center;
+        background-size: cover;
+        background-repeat: none;
+        transition: flex 0.8s ease;
+    }
+    
+    .item-1:hover {
+        flex: 9;
+    }
+    
+    .item-2:hover {
+        flex: 9;
+    }
+    
+    .item-3:hover {
+        flex: 9;
+    }
+ }
