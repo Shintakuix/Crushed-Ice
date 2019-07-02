@@ -3,7 +3,7 @@ body{
 }
 #logo{
     height:60px;
-    width:auto;
+    margin-top:10px;
 }
 
 .dt {
@@ -82,7 +82,7 @@ h1 {
 .gallery-wrap {
     display: flex;
     flex-direction: row;
-    width: 100%;
+    max-width: 100%;
     height: 70vh;
 }
 
@@ -174,4 +174,41 @@ h1 {
 #block3:hover {
     background-color: #54D7FF;
     color: black;
+}
+
+@media (max-width: 767.98px) {
+
+    .container {
+        padding: 35px 0;
+        margin: 0 auto;
+        width: 600px;
+    }
+
+    .gallery-wrap {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: 70vh;
+    }
+
+    .item {
+        flex: 1;
+        height: 100%;
+        background-position: center;
+        background-size: cover;
+        background-repeat: none;
+        transition: flex 0.8s ease;
+    }
+    
+    .item-1:hover {
+        flex: 9;
+    }
+    
+    .item-2:hover {
+        flex: 9;
+    }
+    
+    .item-3:hover {
+        flex: 9;
+    }
 }
