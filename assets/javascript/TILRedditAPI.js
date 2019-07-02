@@ -20,6 +20,12 @@ function til() {
 
   $("#block2").on("click", function (event) {
     console.log("facts!!!")
+    var delayButton =  $(this);
+    delayButton.attr('disabled', true);
+    setTimeout(function() {
+        delayButton.attr('disabled', false);
+    }, 1000);
+  $("#response3").empty();
     event.preventDefault();
     $("#response2").empty();
     til();
