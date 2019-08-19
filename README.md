@@ -29,3 +29,7 @@ Breakdown of tasks:
 Will will be doing the front-end.
 Chris will be taking care of one of the APIs.
 Jose will be taking care of the second API.
+
+ScreenShot of the final Product:
+
+https://snipboard.io/XZGBVI.jpg
